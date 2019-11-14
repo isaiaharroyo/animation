@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Animation</title>
+        <style>
+        
+        body
+        {
+            background-color: burlywood;
+            font-family: "Avenir Next", sans-serif;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 25px;
+        }
+        
+        h1
+        {
+            text-align: center;
+        }
+        
+        p
+        {
+            text-indent: 33px;
+        }
+            
+        #mean
+            {
+                text-align: center;
+            }
+        
+        </style>
+    </head>
+    <body>
+        <h1>Animation</h1>
+        <p><b>Using your knowledge of the reading, how did Dr. B. do those sweet, sweet Animations yesterday in class. (If you were not in class, Dr. B. did animations with charts)</b></p>
+        <p>There were several steps involved when incorporating animations to charts. The first part is to have some way to start the change process. In the book, the change was kickstarted when a paragraph was clicked. Within the .on("click") function was the process at which to update the dataset by overwriting the original values. The best way to do this is to select where you want the dataset to go and then rebind the new dataset using .data(). </p>
+        <p>In class, at the click of a button, Dr. B changed the heights of the bars on the graph. The way this was done was that following the binding of the new data set within the .on("click") function, the heights and y-positions were then updated. This was used with the .attr("y",function{}) and .attr("height",function{}). The functions simply returned the new height for the graph.</p>
+        <p>The animation process was done by adding two lines of code: .transition() and .duration(). These lines of code should be added after binding the new dataset but before changing the attributes. The way this works is that the transition provides a smooth animation between the changes and the duration allow the time spent on the transition to be changed. This is how Dr. B was able to provide those sweet, sweet animations from class.</p>
+        
+    </body>
+</html>
